@@ -99,7 +99,7 @@ footer .disclaimer {
     color: #4e7ab1;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 480px) {
     .cards {
         flex: 1 1 100%;
     }
@@ -115,7 +115,7 @@ footer .disclaimer {
     }
 }
 
-@media (min-width: 751px) and (max-width: 1620px) {
+@media (min-width: 481px) and (max-width: 768px) {
     .cards {
         flex: 1 1 45%;
     }
@@ -124,7 +124,7 @@ footer .disclaimer {
     }
 }
 
-@media (min-width: 1621px) {
+@media (min-width: 769px) {
     .cards {
         flex: 1 1 30%;
     }

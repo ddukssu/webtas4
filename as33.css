@@ -1,0 +1,131 @@
+html, body {
+    margin: 0;
+    background: linear-gradient(to bottom, #102b53, #4e7ab1) fixed;
+    font-family: "Arial Black", serif;
+    height: 100vh;
+    color: #102b53;
+}
+
+.portfolio {
+    margin-top: 40px;
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: rgba(126, 159, 192, 0.2);
+    padding: 40px 20px;
+    border-radius: 45px;
+}
+.cards {
+    flex: 1 1 30%;
+    margin: 10px;
+    border-radius: 35px;
+    text-align: center;
+    background: linear-gradient(to bottom, #ceb5d4, #7d9fc0);
+    padding: 20px 20px 40px;
+    transition: transform 0.5s;
+}
+.cards:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(16, 43, 83, 0.7);
+}
+.cards img {
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+}
+.cards h3 {
+    font-size: 2rem;
+    margin: 20px 0 10px;
+}
+.cards p {
+    font-style: italic;
+    color: #4e7ab1;
+    font-size: 0.8rem;
+}
+.button {
+    display: inline-block;
+    background-color: #4e7ab1;
+    border-radius: 20px;
+    padding: 10px;
+    width: 50%;
+    font-size: 0.8rem;
+    color: #7d9fc0;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.button:hover {
+    background-color: #ceb5d4;
+    color: #4e7ab1;
+}
+
+aside {
+    text-align: center;
+    background: rgba(126, 159, 192, 0.2);
+    border-radius: 45px;
+    padding: 40px 20px;
+    margin-top: 20px;
+}
+aside p {
+    font-size: 1.6rem;
+    color: #ceb5d4;
+}
+aside a {
+    display: block;
+    margin: 20px;
+    padding: 10px;
+    background-color: #102b53;
+    color: #7d9fc0;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+aside a:hover {
+    background-color: #4e7ab1;
+    color: #102b53;
+}
+
+footer {
+    background-color: #7d9fc0;
+    color: #ceb5d4;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;
+    margin-top: 40px;
+}
+footer .disclaimer {
+    font-size: 12px;
+    color: #4e7ab1;
+}
+
+@media (max-width: 600px) {
+    .cards {
+        flex: 1 1 100%;
+    }
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards h3 {
+        font-size: 1.3rem;
+    }
+    .button {
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+    .cards {
+        flex: 1 1 45%;
+    }
+    .cards h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 993px) {
+    .cards {
+        flex: 1 1 30%;
+    }
+}
